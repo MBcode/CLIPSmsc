@@ -20,6 +20,8 @@
 ;[Only collected are really the LIST methods and a sort fnc.]
 ;(deffunction e () (exit)) ;change for jess
 (deffunction ex () (exit))
+(deffunction lo () (exit))
+;(deffunction lo () (date) (ex))
 (deffunction lt () (load t.clp))
 (deffunction lt2 () (load t2.clp))
 (deffunction lt3 () (load t3.clp))
@@ -34,7 +36,15 @@
 (deffunction lp () (load poc.clp))
 (deffunction lbp () (lp) (lb))
 (deffunction decrn (?n) (if (numberp ?n) then (- ?n 1) else 0))
-;temp put this here: -deleted-
+;temp put this here:
+(defglobal ?*cme-clp-files* = (create$ ;strings.clp io.clp 
+   message-functions.clp
+   FIX-Recev-Common.clp FIX-Recev-EOY.clp FIX-Send-Common.clp FIX-Send-EOY.clp
+   cyclops_prep.clp ;inbound-cyclops2.clp interpreter_control.clp
+   market_data_templates.clp mdp_outbound_interpreter.clp
+   nsc_inbound_interpreter.clp nsc_outbound_interpreter.clp
+   outbound_cyclops2.clp red_modules.clp task.clp 
+))
 (deffunction fixint (?valstr)
  ;(if (eq (eval ?valstr) 2147483647) then (eval (str-cat ?valstr ".0")))
   (if (> (eval ?valstr) 2147483646) then (eval (str-cat ?valstr ".0")) else (eval ?valstr))
@@ -53,6 +63,8 @@
    (if (numstr-p ?valstr) then (fixint ?valstr) else ?valstr)
  )
 )
+;(deffunction cmeclp2L ()  (map1 file2lists  ?*cme-clp-files*))
+;trading.clp noman_interface_templates.clp
 
 ;CLIPS> (type [Rolls-Royce])
 ;CAR
@@ -324,7 +336,7 @@
 
 
 ;lookat:
-;DESCRIBE-CLASS: Provides a verbose description of a class.
+;DESCRIBE-CLASS: Provides a verbose gescription of a class.
 ;(describe-class <class-name>)
 ;
 (deffunction print_class (?c)  (describe-class ?c)) ;specialize below
@@ -1484,6 +1496,21 @@
 	      ;(bind ?var (send ?ins (sym-cat get- (nth$ 1 ?sn))))
 	      ;(if (multifieldp ?var) then (nth$ 1 ?var) else ?var)
   	      (rget ?var (rest$ ?sn))))
+(deffunction rget$ (?ins $?sn)
+ "ret full list this time" ;should make to handle list of ins now too, map1 over it
+   (if (multifieldp ?ins) then (return (map1 rget$ ?ins $?sn))) ;this might work 
+   (if (not (instancep ?ins))  then 
+        (printout t "[Warning] Bad rget ins=" ?ins " sn=" ?sn crlf) ;(return 0.0)
+	(return nil)
+   )
+   (bind ?var (slot-value ?ins (nth$ 1 ?sn))) ;new
+   (if (eq (length$ ?sn) 1) then			;return last value
+	      ;(bind ?var (send ?ins (sym-cat get- (nth$ 1 ?sn))))
+	      ?var ;(if (multifieldp ?var) then (nth$ 1 ?var) else ?var)
+	 else	;do again
+	      ;(bind ?var (send ?ins (sym-cat get- (nth$ 1 ?sn))))
+	      ;(if (multifieldp ?var) then (nth$ 1 ?var) else ?var)
+  	      (rget ?var (rest$ ?sn))))
 
 ;a version more like remote-put
 ;like rget, but takes ?val and does a put-LAST-SLOT-NAME
@@ -1976,6 +2003,14 @@
  (if (null-lv ?l) then ?l else
   (if (member$ (first ?l) (rest$ ?l)) then  (remove-duplicates (rest$ ?l))
    else                (create$ (first$ ?l) (remove-duplicates (rest$ ?l))))))
+;deffunction remove-duplicates (?v) ;CLIPS Support <gdronline2008@swbell.net>:
+(deffunction rm-duplicates (?v)
+  (bind ?rv (create$))
+  (progn$ (?s ?v)
+     (if (not (member$ ?s ?rv))
+        then
+        (bind ?rv (create$ ?rv ?s))))
+  ?rv)
 ;------------------------------------------------------
 ;new from hw2
 (deffunction duplicates (?l)
@@ -2622,6 +2657,9 @@
  (printout t crlf "pins:" ?pif)
  (load-instances ?pif)
 )
+(deffunction loadp- (?file)
+  (loadp ?file)
+  (load (str-cat ?file ".clp"))) ;also get realted code
 (deffunction loadpc (?file)
  "loadp w/.clp .ins"
   (loadp ?file ".clp" ".ins"))
@@ -5617,3 +5655,25 @@
       (return (str-cat "(" ?cmp " " ?result " " ?expected-result ") -> FALSE"))))
       
 ;http://commentsarelies.blogspot.com/2007/11/added-some-functionality-in-clips.html 
+
+(deffunction stringify (?value) ;not sure about htis one
+  (if (not (stringp ?value))
+     then
+     (return ?value))
+  (if (and (not (str-index "\"" ?value))
+           (not (str-index "\\" ?value))) ;"
+     then
+     (return ?value))
+  (bind ?new-string "")
+  (bind ?length (str-length ?value))
+  (loop-for-count (?i ?length)
+     (bind ?char (sub-string ?i ?i ?value))
+     (if (or (eq ?char "\"") (eq ?char "\\")) ;"
+        then
+        (bind ?new-string (str-cat ?new-string "\\" ?char)) ;"
+        else
+        (bind ?new-string (str-cat ?new-string ?char))))
+  (return ?new-string))  ;???
+;CLIPS> (stringify "abc") "abc"
+;CLIPS> (stringify "a\\b\\c") "a\\b\\c"
+;CLIPS> (stringify "a\b\c") "abc"

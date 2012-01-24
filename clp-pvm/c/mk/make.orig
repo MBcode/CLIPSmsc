@@ -1,0 +1,12 @@
+#XXX: fix these. DO they need slashes?
+DESTDIR=
+PREFIX=/usr/local
+
+all :
+	cd src && make DESTDIR=$(DESTDIR) PREFIX=$(PREFIX) all
+
+clean : 
+	cd src && make DESTDIR=$(DESTDIR) PREFIX=$(PREFIX) clean
+
+install :
+	cd src && make DESTDIR=$(DESTDIR) PREFIX=$(PREFIX) install

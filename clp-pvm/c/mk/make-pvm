@@ -1,0 +1,71 @@
+# Object files for the CLIPS engine
+ENGINEOBJS = watch.o utility.o userdata.o tmpltutl.o tmpltrhs.o \
+tmpltpsr.o tmpltlhs.o tmpltfun.o tmpltdef.o tmpltcmp.o tmpltbsc.o \
+tmpltbin.o textpro.o sysdep.o symbol.o symblcmp.o symblbin.o strngrtr.o \
+strngfun.o sortfun.o scanner.o rulepsr.o rulelhs.o ruledlt.o ruledef.o \
+rulecstr.o rulecom.o rulecmp.o rulebsc.o rulebld.o rulebin.o router.o \
+retract.o reteutil.o reorder.o proflfun.o prntutil.o prdctfun.o prcdrpsr.o \
+prcdrfun.o prccode.o pprint.o pattern.o parsefun.o objrtmch.o objrtgen.o \
+objrtfnx.o objrtcmp.o objrtbld.o objrtbin.o objcmp.o objbin.o multifun.o \
+multifld.o msgpsr.o msgpass.o msgfun.o msgcom.o modulutl.o modulpsr.o \
+moduldef.o modulcmp.o modulbsc.o modulbin.o miscfun.o memalloc.o \
+lgcldpnd.o iofun.o insqypsr.o insquery.o inspsr.o insmult.o insmoddp.o \
+insmngr.o insfun.o insfile.o inscom.o inherpsr.o incrrset.o immthpsr.o \
+globlpsr.o globldef.o globlcom.o globlcmp.o globlbsc.o globlbin.o \
+genrcpsr.o genrcfun.o genrcexe.o genrccom.o genrccmp.o genrcbin.o \
+generate.o filertr.o filecom.o factrhs.o factrete.o factprt.o factmngr.o \
+factmch.o factlhs.o facthsh.o factgen.o factfun.o factcom.o factcmp.o \
+factbld.o factbin.o extnfunc.o exprnpsr.o exprnops.o exprnbin.o expressn.o \
+evaluatn.o envrnmnt.o engine.o emathfun.o edterm.o edstruct.o edmisc.o \
+edmain.o edbasic.o drive.o dfinscmp.o dfinsbin.o dffnxpsr.o dffnxfun.o \
+dffnxexe.o dffnxcmp.o dffnxbin.o dffctpsr.o dffctdef.o dffctcmp.o \
+dffctbsc.o dffctbin.o developr.o defins.o default.o cstrnutl.o cstrnpsr.o \
+cstrnops.o cstrncmp.o cstrnchk.o cstrnbin.o cstrcpsr.o cstrccom.o \
+cstrcbin.o crstrtgy.o constrnt.o constrct.o conscomp.o commline.o \
+clsltpsr.o classpsr.o classini.o classinf.o classfun.o classexm.o \
+classcom.o bsave.o bmathfun.o bload.o argacces.o analysis.o agenda.o
+ENGINELIBS = -lm
+
+# Objects for the XWindows interface
+XWINDOWSOBJS = xclips.o xclipstext.o xedit.o xmain.o xmenu.o \
+xmenu_exec.o xmenu_file.o xmenu_opt.o xmenu_watch.o xmenu_wind.o
+XWINDOWSLIBS = -L/usr/X11R6/lib -I/usr/X11R6/include -lXaw -lXmu -lXt -lXext -lX11 -L./ -lclips
+
+# Objects for the command line interface
+#COMMANDLINEOBJS = main.o
+COMMANDLINEOBJS = c-main.o
+CMDLIBS = -ltermcap -L./ -lclips
+
+# Programs that may be produced
+PROGS = clips${exeext} xclips${exeext}
+ENGINE = libclips.so
+
+.c.o :
+	gcc -c -Wall -Wundef -Wpointer-arith -Wshadow -Wcast-qual \
+	    -Wcast-align -Winline -Wmissing-declarations -Wredundant-decls \
+	    -Woverloaded-virtual -Wmissing-prototypes -Wnested-externs \
+	    -Wstrict-prototypes -Waggregate-return -Wno-implicit $(CFLAGS) $<
+
+all: clips xclips
+
+clips : $(ENGINE) $(COMMANDLINEOBJS)
+	gcc $(CMDLIBS) -o clips${exeext} $(COMMANDLINEOBJS)
+
+xclips : $(ENGINE) $(XWINDOWSOBJS)
+	gcc $(XWINDOWSLIBS) -o xclips${exeext} $(XWINDOWSOBJS)
+
+$(ENGINE) : $(ENGINEOBJS)
+	gcc $(ENGINELIBS) -shared -o libclips.so $(ENGINEOBJS)
+
+clean : 
+	@rm -f $(ENGINEOBJS) $(COMMANDLINEOBJS) $(XWINDOWSOBJS) $(PROGS) $(ENGINE)
+
+install : 
+	install -d -m 755                  $(DESTDIR)/$(PREFIX)/bin
+	install    -m 755 clips${exeext}   $(DESTDIR)/$(PREFIX)/bin/clips${exeext}
+	install -d -m 755                  $(DESTDIR)/$(PREFIX)/lib/clips
+	install    -m 755 $(ENGINE)        $(DESTDIR)/$(PREFIX)/lib/$(ENGINE)
+	install    -m 644 ../doc/clips.hlp $(DESTDIR)/$(PREFIX)/lib/clips/clips.hlp
+
+setup.h : 
+	sed -e "s:XXX_HELP_FILE:$(PREFIX)/lib/clips/clips.hlp:g" setup.h.in > setup.h
