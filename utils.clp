@@ -1802,6 +1802,8 @@
 (deffunction find-ins (?class ?slot ?value)
   (find-all-instances ((?t ?class)) (eq (slot-value ?t ?slot) ?value))
 )
+;(deffunction find-ins-str (?class ?slot ?value) ;below defn of findall
+;  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) )))
 (deffunction find1 (?class ?slot ?value)
   "just find the 1st, not a mf"
   (first (find ?class ?slot ?value))
@@ -5517,6 +5519,9 @@
      else (break)))
      
   (return ?result))
+
+(deffunction find-ins-str (?class ?slot ?value)  ;new find-ins fnc
+  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) )))
   
   
 (deffunction split (?pattern ?string $?max)
