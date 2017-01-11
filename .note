@@ -1,2 +1,3 @@
 do NOT use pins2km nor km-tax considering malecoli cl-kb then lisa.sf.net
- 
+small fix to sed, can handle some more files, but use clean input
+ it turns out that doing an agrep to get a subset of instances can break some(long?)lines 
