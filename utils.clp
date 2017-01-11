@@ -1799,6 +1799,9 @@
  "find all of that class w/that slot having that value"
  (find-all-instances ((?t ?class)) (eq ?t:slot ?value))
 )
+(deffunction find-ins (?class ?slot ?value)
+  (find-all-instances ((?t ?class)) (eq (slot-value ?t ?slot) ?value))
+)
 (deffunction find1 (?class ?slot ?value)
   "just find the 1st, not a mf"
   (first (find ?class ?slot ?value))
