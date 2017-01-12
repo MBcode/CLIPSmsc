@@ -11,7 +11,7 @@ also
 pins2km .sed
 small fix to sed, can handle some more files, but use clean input
  it turns out that doing an agrep to get a subset of instances can break some(long?)lines 
- 100+M files take at least on the order of thime that clips takes to load ;not sure abt lisa
+ 100+M files take @least on the order of the time(longer) that clips takes to load ;not sure abt lisa
 
 ;aside i've always wanted a fwd chainer on agraph, more like lispworks knowledge-based product
 

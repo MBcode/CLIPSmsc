@@ -5553,11 +5553,21 @@
 (deffunction find-ins-str-sv (?cls ?sn ?str) 
    (save_ins2 (find-ins-str ?cls ?sn ?str) (str-cat ?cls ".ins")))
 
-(deffunction find-ins-str1dot (?dn ?str) 
+;deffunction find-ins-str1dot (?dn ?str) 
+(deffunction find-ins-str1dot-sv (?dn ?str) 
     ;split ?dn at dot into cls&sn=dn
     (bind ?cls (file-base ?dn))
     (find-ins-str-sv (sym-cat ?cls) ?dn ?str)) 
-  
+ ;but better to rm-duplicates
+(deffunction find-ins-str1dot (?dn ?str)
+    ;split ?dn at dot into cls&sn=dn
+    (bind ?cls (file-base ?dn))
+    (find-ins-str (sym-cat ?cls) ?dn ?str))
+(deffunction find-ins-str1dots (?dnl ?str)
+  (rm-duplicates (map1 find-ins-str1dot ?dnl ?str)))
+(deffunction find-ins-str1dots-sv (?dnl ?str)
+  (save_ins2 (find-ins-str1dots ?dnl ?str) (str-cat ?str ".ins")))
+
   
 (deffunction split (?pattern ?string $?max)
   "split ?string in parts delimited by ?pattern. Empty strings ("") are
