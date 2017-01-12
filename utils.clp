@@ -1804,6 +1804,8 @@
 (deffunction find-ins (?class ?slot ?value)
   (find-all-instances ((?t ?class)) (eq (slot-value ?t ?slot) ?value))
 )
+;(deffunction find-ins-str (?class ?slot ?value) ;below defn of findall
+;  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) ))) 
 (deffunction find1 (?class ?slot ?value)
   "just find the 1st, not a mf"
   (first (find ?class ?slot ?value))
@@ -5544,6 +5546,17 @@
      else (break)))
      
   (return ?result))
+
+(deffunction find-ins-str (?class ?slot ?value)  ;new find-ins fnc
+  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) )))
+;can use w/:
+(deffunction find-ins-str-sv (?cls ?sn ?str) 
+   (save_ins2 (find-ins-str ?cls ?sn ?str) (str-cat ?cls ".ins")))
+
+(deffunction find-ins-str1dot (?dn ?str) 
+    ;split ?dn at dot into cls&sn=dn
+    (bind ?cls (file-base ?dn))
+    (find-ins-str-sv (sym-cat ?cls) ?dn ?str)) 
   
   
 (deffunction split (?pattern ?string $?max)

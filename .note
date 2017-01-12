@@ -1,5 +1,20 @@
 do NOT use pins2km nor km-tax considering malecoli cl-kb then lisa.sf.net
-small fix to sed, can handle some more files, but use clean input
- it turns out that doing an agrep to get a subset of instances can break some(long?)lines 
+  cl-kb just has pprj&xml file, but can export the pont&pins but just sys-slots vs. full hierarchy 
+  change pprj type to pont/pins looses the same info; assume it was the experimental-xml file,might be able to convert this
 
 Look at r-device code again, when I can, as a way to get triples out &more?; though protege has mult save-as/transform opts
+
+using agraph&gruff and asking for connections might be nice    
+
+;still prolog-tab &km-tax if it worked better 
+also
+pins2km .sed
+small fix to sed, can handle some more files, but use clean input
+ it turns out that doing an agrep to get a subset of instances can break some(long?)lines 
+ 100+M files take at least on the order of thime that clips takes to load ;not sure abt lisa
+
+;aside i've always wanted a fwd chainer on agraph, more like lispworks knowledge-based product
+
+find-ins-str was written&commited on another machine, but didn't show up; have to check on this
+
+save*ins2 can be useful to restrict what to load, and for greping seperated files
