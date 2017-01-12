@@ -23,3 +23,6 @@
  (reset)
 )
 ;--------------------------------------------------------- 
+;This is still in utils.clp but not every machine has the other code.
+;Even though Protege can work between formats, might still use this.
+; 1plc would be to save gen ins ;as well as taking triples2frames

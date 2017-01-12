@@ -1740,6 +1740,8 @@
    (if (instancep ?ins) then (send ?ins print)
 		else (printout t "[Warning] print-ins got " ?ins crlf))))
 
+;deffunction save-ins2 (?ins ?fn) ;moved down
+
 ;defmessage-handler USER pins ()
 (defmessage-handler OBJECT pins ()
  ;(ppinstance)
@@ -1802,8 +1804,6 @@
 (deffunction find-ins (?class ?slot ?value)
   (find-all-instances ((?t ?class)) (eq (slot-value ?t ?slot) ?value))
 )
-;(deffunction find-ins-str (?class ?slot ?value) ;below defn of findall
-;  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) )))
 (deffunction find1 (?class ?slot ?value)
   "just find the 1st, not a mf"
   (first (find ?class ?slot ?value))
@@ -4390,6 +4390,31 @@
 
 (deffunction to-str ($?args) 
   (str-strip-quote (implode$ ?args)))
+
+;(deffunction qis- (?str) (qis (str-strip-quote ?str)))
+(deffunction qis- (?ps)
+ "quote if a string"
+ (if (stringp ?ps) then (str-cat "\"" (str-strip-quote ?ps) "\"") else ?ps)
+)
+;--SAVE-INS2--------------------------------------------------
+;deffunction print-ins2 (?ins ?fn)
+(deffunction save-ins2 (?ins ?fn)
+  "save/append 1instance to a file"
+  (open ?fn out "a")
+   (if (instancep ?ins) then 
+       (bind ?sn (slot-names ?ins))
+       (bind ?sv (slot-values ?ins)) 
+       (printout out crlf "(" (instance-name ?ins) " of  " (class ?ins) " ")               ;will loose inner quotes4now
+       (progn$ (?v ?sv) (if (full ?v) then (printout out crlf " (" (nth$ ?v-index ?sn) " " (qis- ?v) ")"))) ;no recursion 
+       (printout out crlf ")" ) 
+        else (printout out "[Warning] save-ins2 got " ?ins crlf))
+  (close out))
+;deffunction print_ins2 (?ins ?fn)
+(deffunction save_ins2 (?ins ?fn)
+  "save/append 1 or a list of instances to a file"
+  (if (multifieldp ?ins) then (progn$ (?i ?ins) (save-ins2 ?i ?fn)) 
+   else (save-ins2 ?ins ?fn)))
+
  
 (deffunction paren-p (?str) 
   (and (stringp ?str) 
@@ -5519,9 +5544,6 @@
      else (break)))
      
   (return ?result))
-
-(deffunction find-ins-str (?class ?slot ?value)  ;new find-ins fnc
-  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) )))
   
   
 (deffunction split (?pattern ?string $?max)
