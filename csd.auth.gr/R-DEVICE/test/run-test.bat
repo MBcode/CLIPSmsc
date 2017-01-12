@@ -1,0 +1,7 @@
+(set-verbose off)
+(load-rdf "structure" local)
+(load-rdf "content" local)
+(import)
+(r-device "question8.clp")
+(go)
+(do-for-all-instances ((?p result)) TRUE (progn (printout t crlf)(send ?p print) (printout t crlf)))

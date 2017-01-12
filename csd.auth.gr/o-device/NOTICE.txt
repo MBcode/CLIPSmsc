@@ -1,0 +1,3 @@
+
+-O-DEVICE makes use of the Jena API (http://jena.sourceforge.net/)
+-O-DEVICE makes use of the CLIPS rule engine (http://clipsrules.sourceforge.net/)

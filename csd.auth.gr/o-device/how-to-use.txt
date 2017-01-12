@@ -1,0 +1,34 @@
+
+How to Use
+=============
+-> Modify the file odevice/config.bat in order to 
+   match your configuration. In principle, only the
+   folder path of O-DEVICE needs to be defined.
+
+-> Add to the odevice/prepare.bat file the ontology(ies)
+   you want to transform using the load-ontology function, e.g.
+   (load-ontology "http://www..." "http://www" "file:c:/work/..")
+
+-> Start the CLIPS rule engine
+
+-> Execute the odevice/config.bat file, i.e.
+   CLIPS> (batch* odevice/config.bat)
+   
+-> Execute the odevice/prepare.bat file, i.e.
+   CLIPS> (batch* odevice/prepare.bat)
+   
+-> Execute the (clear) function of CLIPS or run a complete
+   new instance of the CLIPS rule engine.
+   
+-> Execute the odevice/exec.bat file, i.e.
+   CLIPS> (batch* odevice/exec.bat)
+   
+-> CLIPS contains now the OO model of the ontologies,
+   as well as some entailment rules in order to preserve
+   some semantics of OWL in the OO model. Any new instance
+   should be created using the O-DEVICE function 
+   (owl-make-instance instance-name class-name) and the
+   values should be inserted into object slots using the
+   O-DEVICE function (owl-insert-value instance-name slot value).
+   
+   

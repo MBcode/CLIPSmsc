@@ -1,0 +1,108 @@
+(deffunction load-rule-file (?filename)
+	(bind ?rule-string "")
+	(open ?filename rule "r")
+	(bind ?line (readline rule))
+	;(verbose "line: " ?line crlf)
+	(while (neq ?line EOF)
+	   do
+	   	(bind ?rule-string (str-cat ?rule-string ?line))
+	   	(bind ?line (readline rule))
+		;(verbose "line: " ?line crlf)
+	)
+	(close rule)
+	;(verbose "rule-string: " ?rule-string crlf)
+	(bind $?rule-list (my-explode$ ?rule-string))
+	;(verbose "Rules: " $?rule-list crlf)
+	(while (> (length$ $?rule-list) 0)
+	   do
+	   	(bind ?p2 (get-token $?rule-list))
+	   	(bind $?rule (subseq$ $?rule-list 1 ?p2))
+	   	;(bind ?rule-string (str-cat$ "(" (nth$ 2 $?rule) (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1))) ")"))
+	   	;(funcall assert (nth$ 2 $?rule) (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1))))
+	   	(bind ?rule-type (nth$ 2 $?rule))
+	   	(bind ?rule-string (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1))))
+	   	(switch ?rule-type
+	   		(case deductiverule 
+	   		   then
+	   			(assert (deductiverule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case derivedattrule
+	   		   then
+	   			(assert (derivedattrule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case aggregateattrule
+	   		   then
+	   			(assert (aggregateattrule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(default (printout t "Unknown rule type: " crlf (str-cat$ $?rule) crlf))
+	   	)
+	   	(bind $?rule-list (subseq$ $?rule-list (+ ?p2 1) (length$ $?rule-list)))
+	)
+	TRUE
+)
+
+(deffunction load-rule-files ($?file-list)
+	(bind ?end (length$ $?file-list))
+	(loop-for-count (?n 1 ?end)
+	   do
+	   	(load-rule-file (nth$ ?n $?file-list))
+	)
+)
+
+(deffunction go ()
+	(verbose "Running rules..." crlf)
+	(bind ?old-strategy (get-strategy))
+	(bind ?old-salience (get-salience-evaluation))
+	(set-strategy breadth)
+	(set-salience-evaluation when-activated)
+	(bind ?objects-before -1)
+	(bind ?objects-after (no-of-derived-objects))
+	(while (<> ?objects-after ?objects-before)
+	   do
+		(bind ?ind (assert (run-deductive-rules)))
+		(bind ?objects-before ?objects-after)
+		(run)
+		(bind ?objects-after (no-of-derived-objects))
+		(retract ?ind)
+	)
+	(set-salience-evaluation ?old-salience)
+	(set-strategy ?old-strategy)
+	(verbose "End of inferencing!" crlf)
+	TRUE
+)
+
+; Loading should distinguish between .bat and .clp files
+(deffunction device (?rule-files ?class-files ?object-files ?verbose)
+	(set-verbose ?verbose)
+	(verbose "Loading classes...")
+	(load-files (explode$ ?class-files))
+	(verbose " ok" crlf)
+	(reset)
+	(set-verbose ?verbose)
+	(verbose "Loading rules...")
+	(load-rule-files (explode$ ?rule-files))
+	(verbose " ok" crlf)
+	(verbose "Loading objects...")
+	(load-files (explode$ ?object-files))
+	(verbose " ok" crlf)
+	;(run)
+	(verbose "Translating rules..." )
+	(translate-device-rules)
+	(verbose " ok" crlf)
+	TRUE
+)
+
+(deffunction r-device (?rule-files)
+	(verbose "Loading rules...")
+	(load-rule-files (explode$ ?rule-files))
+	(verbose " ok" crlf)
+	;(reset)
+	;(run)
+	(verbose "Translating rules..." )
+	(translate-device-rules)
+	(verbose " ok" crlf)
+	TRUE
+)

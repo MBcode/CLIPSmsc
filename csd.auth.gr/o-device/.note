@@ -1,0 +1,23 @@
+total 2.6M
+-rw-r--r-- 1 bobak 838K Apr  6  2008 CLIPSDOS.exe
+-rw-r--r-- 1 bobak 850K Apr  6  2008 CLIPSWin.exe
+-rw-r--r-- 1 bobak 2.4K Oct 13  2009 config.bat
+-rw-r--r-- 1 bobak 1015 Aug 30  2009 create-classes.clp
+-rw-r--r-- 1 bobak 2.2K Sep  7  2009 create-objects.clp
+-rw-r--r-- 1 bobak  41K Oct  9  2009 create-templates.clp
+-rw-r--r-- 1 bobak  135 Aug 27  2009 description.txt
+-rw-r--r-- 1 bobak 1001 Oct 11  2009 exec.bat
+-rw-r--r-- 1 bobak  55K Oct 13  2009 functions.clp
+-rw-r--r-- 1 bobak 7.0K Oct 13  2009 global.clp
+-rw-r--r-- 1 bobak 1.2K Aug 27  2009 how-to-use.txt
+-rw-r--r-- 1 bobak  27K Oct 14  2009 j2cf.jar
+-rw-r--r-- 1 bobak  576 Aug 20  2009 LICENSE.txt
+-rw-r--r-- 1 bobak  151 Aug 20  2009 NOTICE.txt
+-rw-r--r-- 1 bobak 664K Feb 27  2014 odevice_v2.rar
+-rw-r--r-- 1 bobak 1.7K Oct 11  2009 order.clp
+-rw-r--r-- 1 bobak 1.9K Oct 14  2009 prepare.bat
+-rw-r--r-- 1 bobak 1022 Aug 27  2009 readme.txt
+-rw-r--r-- 1 bobak 2.9K Oct 14  2009 release_notes.txt
+-rw-r--r-- 1 bobak  25K Oct  6  2009 rule-generator.clp
+-rw-r--r-- 1 bobak 4.5K Oct  9  2009 vocabulary-abbr.clp
+-rw-r--r-- 1 bobak 7.1K Oct  9  2009 vocabulary.clp

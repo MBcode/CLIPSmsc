@@ -1,0 +1,91 @@
+
+Version 2.0
+===========
+- Support for owl:AllDisjointClasses
+
+- Add (load-rules) function for loading rule programs
+  on top of O-DEVICE. 
+
+
+Version 1.2
+===========
+- Support for owl:propertyChainAxiom
+
+- New function: (owl-insert-values$) for inserting multiple
+  instance slot values
+
+- New defglobal variable (?*imports*) in order to control 
+  the processing of the imported ontologies
+
+- Support for qualified cardinality restrictions (partially)
+
+- Support for owl:hasKey property
+
+- Add functions for backing-up/restoring instances
+
+- The restore-instance* function checks also for the 
+  existence of the instance slots
+
+
+Version 1.1
+===========
+- Code optimizations: 
+	- many functions have been re-written
+	- some redundant rules have been removed (e.g. the collect-restrictions.clp)
+
+
+Version 1.0
+===========
+- Major source code reorganization: only the relevant constructs are 
+  loaded using the exec.bat, resulting in faster rule execution
+  
+- The (run) function is not executed any more by the functions 
+  owl-make-instance and owl-insert-value. Use instead the functions 
+  owl-make-instance-run and owl-insert-value-run 
+
+
+Version 0.3
+===========
+- Support for the owl:complementOf construct (checks if there are
+  objects that belong to complement classes)
+  
+- The call to the j2cf module needs to specify the ?*abbr* flag (config.bat) 
+  that denotes whether the prefixes or the namespaces should be used during the
+  generation of the triple-based facts (create-facts function). It is recommended 
+  to use ?*abbr* = TRUE in config.bat, since it results in faster execution.
+  
+- Enhanced slot type mappings regarding boolean, nonNegativeInteger, positiveInteger,
+  nonPositiveInteger and short ranges
+  
+- Only the generated code is stored into the bundle folder, without the source
+  code of O-DEVICE (modified exec.bat file).
+
+- defglobals for OWL and RDF/RDFS vocabulary 
+
+
+Version 0.2
+===========
+- The namespaces are mapped on prefixes for better performance.
+
+- Parameterizes the file/folder paths (through the config.bat).
+
+- Allows the definition of more than one ontology 
+  as parameters for the function load_ontology, for
+  example, (load-ontology "file:c:\\..." "file:c:\\..." ...)
+  
+- Fixes some performance problems regarding the 
+  loading of ontologies with large number of classes.
+  
+- Facts of the template PrefixNsMap are generated that 
+  contain information about the prefixes mapping on namespaces
+  of the loaded ontologies (these mappings are computed 
+  by Jena) 
+
+- The function "ns" has been added for substituting the prefix
+  with the corresponding namespace.
+
+- The function mapPrefixNs has been added that allows the 
+  definition of new mappings for prefixes/namespaces.
+  
+- CLIPS cannot process symbols that contain the character '~'. 
+  This character is removed. 

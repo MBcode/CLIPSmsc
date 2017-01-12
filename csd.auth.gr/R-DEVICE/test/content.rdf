@@ -1,0 +1,495 @@
+<!DOCTYPE rdf:RDF [
+  <!ENTITY dmoz "http://directory.mozilla.org/rdf/"> 
+]>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"  
+     xmlns:dmoz="&dmoz;">
+
+<dmoz:Topic rdf:about="&dmoz;Top">
+  <dmoz:catid> "1"</dmoz:catid>
+  <dc:title>Top</dc:title>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Arts">
+  <dmoz:catid> "2"</dmoz:catid>
+  <dc:title>Arts</dc:title>
+  <dmoz:link rdf:resource="http://www3.bc.sympatico.ca/PHILLIPSHOTGLASS/GlassPage.html"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www3.bc.sympatico.ca/PHILLIPSHOTGLASS/GlassPage.html">
+  <dc:title>John phillips Blown glass</dc:title>
+  <dc:description>A small display of glass by John Phillips</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Business">
+  <dmoz:catid> "3"</dmoz:catid>
+  <dc:title>Business</dc:title>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Computers">
+  <dmoz:catid> "4"</dmoz:catid>
+  <dc:title>Computers</dc:title>
+  <dmoz:link rdf:resource="http://www.cs.tcd.ie/FME/"/>
+  <dmoz:link rdf:resource="http://pages.whowhere.com/computers/pnyhlen/Timeline.html"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.cs.tcd.ie/FME/">
+  <dc:title>FME HUB</dc:title>
+  <dc:description>Formal Methods Europe (FME) is a European organization supported by the Commission of the European Union (via ESSI of the ESPRIT programme), with the mission of         promoting and supporting the industrial use of formal methods for computer systems development.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://pages.whowhere.com/computers/pnyhlen/Timeline.html">
+  <dc:title>Computer Timeline</dc:title>
+  <dc:description>A brief description of the eras in computing.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Games">
+  <dmoz:catid> "5"</dmoz:catid>
+  <dc:title>Games</dc:title>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Health">
+  <dmoz:catid> "6"</dmoz:catid>
+  <dc:title>Health</dc:title>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Home">
+  <dmoz:catid> "7"</dmoz:catid>
+  <dc:title>Home</dc:title>
+  <dmoz:link rdf:resource="http://www.homeideas.com/"/>
+  <dmoz:link rdf:resource="http://www.housenet.com/"/>
+  <dmoz:link rdf:resource="http://members.aol.com/yodapro/index.html"/>
+  <dmoz:link rdf:resource="http://www.marthastewart.com"/>
+  <dmoz:link rdf:resource="http://www.mfgsupply.com"/>
+  <dmoz:link rdf:resource="http://www.bccondo.com"/>
+  <dmoz:link rdf:resource="http://www.contractornet.com"/>
+  <dmoz:link rdf:resource="http://www.kcweb.com/fl/freelance.htm"/>
+  <dmoz:link rdf:resource="http://thefamilyrealtor.com"/>
+  <dmoz:link rdf:resource="http://members.xoom.com/tipztime"/>
+  <dmoz:link rdf:resource="http://www.cococo.net/~tj/house/"/>
+  <dmoz:link rdf:resource="http://www.suite101.com/articles/article.cfm/7628"/>
+  <dmoz:link rdf:resource="http://www.virtual.net.au/~belair"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.homeideas.com/">
+  <dc:title>Home Ideas: Home Improvement Ideas for Kitchen, Bath, Yard and Garden, etc.</dc:title>
+  <dc:description>The ultimate resource for home projects. Research projects using past issues of Today's Homeowner magazine, request free product literature, and dmoz:link to over 700 industry websites.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.housenet.com/">
+  <dc:title>HouseNet.Com</dc:title>
+  <dc:description>Home improvement, Gardening, Decorating, Sewing, and Money Saving Information.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://members.aol.com/yodapro/index.html">
+  <dc:title>Pro Flooring</dc:title>
+  <dc:description>We sell and install all types of floor coverings.   Pergo, Ceramic Tile, Carpet and Vinyl. We offer free estimates and Shop @ Home services.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.marthastewart.com">
+  <dc:title>Martha Stewart Living</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.mfgsupply.com">
+  <dc:title>Manufacturer's Supply</dc:title>
+  <dc:description>Your one-stop source for lawnmower, chainsaw, and small engine parts. We offer online ordering of all our parts and great service too.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.bccondo.com">
+  <dc:title>BCCondo.com</dc:title>
+  <dc:description>Seeks to provide both prospective and current   condo owners with useful information on   condominium living in the province.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.contractornet.com">
+  <dc:title>ContractorNet</dc:title>
+  <dc:description>Search our database before you hire a residential or commercial contractor!   Each contractor listed has a current certificate of   insurance and copies of applicable licenses on file  with our office.  Other accessible info includes; years  in business, number of employees, professional affliations,  and more.  Site features include; state licensing statutes   and government phone numbers, articles, archive of consumer  Q&amp;A's, message board.  If you're in the market for a contractor,  this is a must-see site!</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.kcweb.com/fl/freelance.htm">
+  <dc:title>Freelance! Free stuff for your home!</dc:title>
+  <dc:description>Very large selection of free samples and products. Updated daily!  Free samples, cd-roms, desktop themes, books, contests and more!</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://thefamilyrealtor.com">
+  <dc:title>TheFamilyRealtor.com</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://members.xoom.com/tipztime">
+  <dc:title>Tipz Time</dc:title>
+  <dc:description>Home on the web with tips and ideas for household including indoors and outdoors, chat, seasonal, and more!</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.cococo.net/~tj/house/">
+  <dc:title>Custom House Plans for .25 cents per square foot.</dc:title>
+  <dc:description>Why pay a fortune to have your new home designed.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.suite101.com/articles/article.cfm/7628">
+  <dc:title>Homeschooling Catholic</dc:title>
+  <dc:description>Why one family homeschools, a list of Catholic curriculums on the internet, a list of families with homeschooling web pages and FREEBIES for homeschooling families.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.virtual.net.au/~belair">
+  <dc:title>Belair Property Maintenance Services</dc:title>
+  <dc:description>Belair Property Maintenance specialises in lawn mowing, garden and turf maintenance in Melbournes outer eastern Suburbs.Our service also incorporates Integrated Pest Control in turf ,garden and horticultural situations using either biological and chemical applications.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/News">
+  <dmoz:catid> "8"</dmoz:catid>
+  <dc:title>News</dc:title>
+  <dmoz:link rdf:resource="http://www.bcity.com/bollettino"/>
+  <dmoz:link rdf:resource="http://news.bbc.co.uk"/>
+  <dmoz:link rdf:resource="http://dailynews.yahoo.com/headlines/top_stories/"/>
+  <dmoz:link rdf:resource="http://www.pressdigest.org/"/>
+  <dmoz:link rdf:resource="http://www.cnn.com/"/>
+  <dmoz:link rdf:resource="http://tvnews.vanderbilt.edu/"/>
+  <dmoz:link rdf:resource="http://internetv.virtualspace.net"/>
+  <dmoz:link rdf:resource="http://attention.hypermart.net"/>
+  <dmoz:link rdf:resource="http://www.palmetto.org/noprint.htm"/>
+  <dmoz:link rdf:resource="http://kresch.com/resources/Content/News_Tickers/newstickers.html"/>
+  <dmoz:link rdf:resource="http://www.msnbc.com"/>
+  <dmoz:link rdf:resource="http://burn.ucsd.edu/~mai/news.html"/>
+  <dmoz:link rdf:resource="http://www.abilityinfo.com/ticker.html"/>
+  <dmoz:link rdf:resource="http://www.obscurestore.com"/>
+  <dmoz:link rdf:resource="http://www.pathfinder.com/welcome/"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.bcity.com/bollettino">
+  <dc:title>International Bulletin</dc:title>
+  <dc:description>International politics.  Italian, French and (some) English</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://news.bbc.co.uk">
+  <dc:title>BBC News</dc:title>
+  <dc:description>International news from the British Broadcasting Corporation</dc:description>
+  <dmoz:priority>1</dmoz:priority>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://dailynews.yahoo.com/headlines/top_stories/">
+  <dc:title>Reuters News Online</dc:title>
+  <dc:description>This is Yahoo with Reuters news coverage and dmoz:links to AP and other coverage. Reuters is a worldwide service that enjoys a solid reputation.</dc:description>
+  <dmoz:priority>1</dmoz:priority>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.pressdigest.org/">
+  <dc:title>Pressdigest</dc:title>
+  <dc:description>International and multilingual press digest.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.cnn.com/">
+  <dc:title>CNN</dc:title>
+  <dc:description>CNN's comprehensive web site with dmoz:links to many valuable services including very prompt sports, financial and breaking news reports. You may be able to wait until tomorrow for all the details but CNN can give you clear and fast news when you want it NOW.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://tvnews.vanderbilt.edu/">
+  <dc:title>Vanderbilt Television News Archive</dc:title>
+  <dc:description>Collection of network news   broadcasts -- ABC, CBS, NBC, CNN, PBS --  from 1968 to the present. Copies of videotape  available on loan basis. Fee charged.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://internetv.virtualspace.net">
+  <dc:title>Internet Television</dc:title>
+  <dc:description>International news in real audio and video.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://attention.hypermart.net">
+  <dc:title>@ttention News</dc:title>
+  <dc:description>news rdf:about politics, business, and technology</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.palmetto.org/noprint.htm">
+  <dc:title>Opinions newspaper editors rejected</dc:title>
+  <dc:description>Publishes letters and opinion-editorial items submitted to but rejected by newspapers, frequently with good reason. Read what the newspapers thought you could do without.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://kresch.com/resources/Content/News_Tickers/newstickers.html">
+  <dc:title>All News Tickers on One Page</dc:title>
+  <dc:description>Seven different news ticker styles, news headlines for your web site, free for the download.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.msnbc.com">
+  <dc:title>MS NBC</dc:title>
+  <dc:description>Provides up-to-date news and weather information from around the country. Other features include NBC news shows such as Dateline and the Today Show that you may prefer seeing on your television set. Also includes business news from CNBC and the Wall Street Journal.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://burn.ucsd.edu/~mai/news.html">
+  <dc:title>MA Infoshop News Kiosk</dc:title>
+  <dc:description>A frequently updated roundup of news and breaking events of interest to activists and police agencies. Lots on anarchy, some on radical feminism and other subjects.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.abilityinfo.com/ticker.html">
+  <dc:title>International Disability News Ticker</dc:title>
+  <dc:description>This constantly updated site tracks news stories from web based news sources pertaining to the area of disability.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.obscurestore.com">
+  <dc:title>Obscure Store and Reading Room</dc:title>
+  <dc:description>A daily collection of mostly off-beat news articles, essays and columns. This is an interesting collection of features that can relieve NewsTedium!</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.pathfinder.com/welcome/">
+  <dc:title>Time Warner's Pathfinder!</dc:title>
+  <dc:description>A gateway to news magazines and some online services.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Recreation">
+  <dmoz:catid> "9"</dmoz:catid>
+  <dc:title>Recreation</dc:title>
+  <dmoz:link rdf:resource="http://www.curiouscat.com/clubs/"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.curiouscat.com/clubs/">
+  <dc:title>Curious Cat Club Connections</dc:title>
+  <dc:description>Find local activities and contacts for local recreation  organizations worldwide such as dances, hiking   clubs, book discussion groups, learning   opportunities, charity work, ultimate clubs, singles   clubs...</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Reference">
+  <dmoz:catid> "10"</dmoz:catid>
+  <dc:title>Reference</dc:title>
+  <dmoz:link rdf:resource="http://www.bookmagazine.com/"/>
+  <dmoz:link rdf:resource="http://www.sosig.ac.uk/"/>
+  <dmoz:link rdf:resource="http://www.mtnds.com/af/"/>
+  <dmoz:link rdf:resource="http://www.infoplease.com"/>
+  <dmoz:link rdf:resource="http://www-sci.lib.uci.edu/HSG/Ref.html"/>
+  <dmoz:link rdf:resource="http://thorplus.lib.purdue.edu/reference/index.html"/>
+  <dmoz:link rdf:resource="http://www.uky.edu/ArtsSciences/Classics/lexindex.html"/>
+  <dmoz:link rdf:resource="http://www.dumblaws.com/"/>
+  <dmoz:link rdf:resource="http://www.abp1.com/1getsmrt/index.html"/>
+  <dmoz:link rdf:resource="http://www.cybergeography.org/atlas/atlas.html"/>
+  <dmoz:link rdf:resource="http://www.sau.edu/CWIS/Internet/Wild/index.htm"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.bookmagazine.com/">
+  <dc:title>Book - The Magazine for the Reading Life</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.sosig.ac.uk/">
+  <dc:title>Social Science Information Gateway - SOSIG</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.mtnds.com/af/">
+  <dc:title>Acronym finder</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.infoplease.com">
+  <dc:title>Information Please</dc:title>
+  <dc:description>Combines an encyclopedia,  a dictionary, and several up-to-the minute almanacs.</dc:description>
+  <dmoz:priority>1</dmoz:priority>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www-sci.lib.uci.edu/HSG/Ref.html">
+  <dc:title>Martindale's The Reference Desk</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://thorplus.lib.purdue.edu/reference/index.html">
+  <dc:title>THOR+: The Virtual Reference Desk</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.uky.edu/ArtsSciences/Classics/lexindex.html">
+  <dc:title>What Do You Want to Know Today?</dc:title>
+  <dc:description>Ancient and classic culture, literature and languages search and retrieval tool.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.dumblaws.com/">
+  <dc:title>Dumb Laws</dc:title>
+  <dc:description>a huge collection of the most senseless laws in the entire United States.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.abp1.com/1getsmrt/index.html">
+  <dc:title>The Virtual Encyclopedia - brought to you by ABP</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.cybergeography.org/atlas/atlas.html">
+  <dc:title>An Atlas of Cyberspaces</dc:title>
+  <dc:description>An atlas of maps and graphic representations of the geographies of the new electronic territories of the Internet, WWW and other emerging Cyberspaces.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.sau.edu/CWIS/Internet/Wild/index.htm">
+  <dc:title>Best Information on the Net</dc:title>
+  <dc:description>A guide to high-quality information resources on the net, appropriate for college students,  faculty and administration, chosen by a librarian/information specialist.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Regional">
+  <dmoz:catid> "11"</dmoz:catid>
+  <dc:title>Regional</dc:title>
+  <dmoz:link rdf:resource="http://www.soon.org.uk/country/language.htm"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.soon.org.uk/country/language.htm">
+  <dc:title>Your own language and country</dc:title>
+  <dc:description>A growing set of pages for different countries.  dmoz:links for tourism, information, dictionaries,  learning English, search engines, life &amp; religion,  &amp; more.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Science">
+  <dmoz:catid> "12"</dmoz:catid>
+  <dc:title>Science</dc:title>
+  <dmoz:link rdf:resource="http://www.ibm.com/patents"/>
+  <dmoz:link rdf:resource="http://www.sciencekomm.at"/>
+  <dmoz:link rdf:resource="http://www.aaas.org/"/>
+  <dmoz:link rdf:resource="http://www.techexpo.com/"/>
+  <dmoz:link rdf:resource="http://www.csiro.au/"/>
+  <dmoz:link rdf:resource="http://www.larc.nasa.gov/"/>
+  <dmoz:link rdf:resource="http://www.carl.org/carlweb/"/>
+  <dmoz:link rdf:resource="http://www.w3.org/hypertext/DataSources/bySubject/Overview.html"/>
+  <dmoz:link rdf:resource="http://www.siec.k12.in.us/~west/sites/scigen.htm"/>
+  <dmoz:link rdf:resource="http://www.ukoln.ac.uk/services/elib/"/>
+  <dmoz:link rdf:resource="http://www.webcom.com/webscout/dmoz:links/science/science.html"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.ibm.com/patents">
+  <dc:title>IBM Patent Server</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.sciencekomm.at">
+  <dc:title>science.komm</dc:title>
+  <dc:description>Bioscience and medical journal dmoz:links, advice and dmoz:links concerning research communication (writing, presenting etc.)</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.aaas.org/">
+  <dc:title>American Association for the Advancement of Science</dc:title>
+  <dc:description>Research news, issue papers. Educational programs, science policy (U.S. and international).</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.techexpo.com/">
+  <dc:title>Tech Expo</dc:title>
+  <dc:description>Exposition of high technology companies and products on the WWW</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.csiro.au/">
+  <dc:title>CSIRO Australia</dc:title>
+  <dc:description>The Commonwealth Scientific and Industrial Research Organisation (CSIRO) is Australia's largest scientific research agency. Areas of research and development include agriculture, forestry, agribusiness, energy, manufacturing, environment, marine resources, climate and atmosphere, mining, petroleum, radio astronomy, pharmaceuticals, and information technology.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.larc.nasa.gov/">
+  <dc:title>NASA Langley Research Center</dc:title>
+  <dc:description>In Hampton, VA. Established in 1917 as the first national civil aeronautics                                                  laboratory, NASA Langley has become a world-class center for                                                  aeronautics, earth science, space technology and structures and                                                  materials research.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.carl.org/carlweb/">
+  <dc:title>CarlWeb</dc:title>
+  <dc:description>search databases for bibliography</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.w3.org/hypertext/DataSources/bySubject/Overview.html">
+  <dc:title>WWW Virtual Library</dc:title>
+  <dc:description>an expert-run catalog of the web</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.siec.k12.in.us/~west/sites/scigen.htm">
+  <dc:title>General Science Sites</dc:title>
+  <dc:description>an annotated list</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.ukoln.ac.uk/services/elib/">
+  <dc:title>eLib: Electronic Libraries Programme</dc:title>
+  <dc:description>the eLib programme consists of around 60 projects</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.webcom.com/webscout/dmoz:links/science/science.html">
+  <dc:title>WebScout</dc:title>
+  <dc:description>A searchable index of the Web sites, discussion groups and archives.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Shopping">
+  <dmoz:catid> "13"</dmoz:catid>
+  <dc:title>Shopping</dc:title>
+  <dmoz:link rdf:resource="http://www.esmarts.com/"/>
+  <dmoz:link rdf:resource="http://www.bdscodak.com"/>
+  <dmoz:link rdf:resource="http://www.choicemall.com/"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.esmarts.com/">
+  <dc:title>eSmarts</dc:title>
+  <dc:description>eSmarts helps consumers find the lowest possible prices on the web. They compare prices at different Internet stores, list coupons (including many $10 off coupons), discuss sales and share great shopping tips.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.bdscodak.com">
+  <dc:title>BD Scodak - personalized children's books for your child's education</dc:title>
+  <dc:description>BD Scodak is your source for personalized children's books customized with your child's information right next to popular cartoon, religious, sports, and tv characters and themes.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.choicemall.com/">
+  <dc:title>Choice World</dc:title>
+  <dc:description>Choice Mall - The #1 global marketplace on the Internet.  Thousands of stores offer quality, unique products and services, art and entertainment, books and music, gifts, food, real estate, health, sports, and fitness -- all under one roof!</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Society">
+  <dmoz:catid> "14"</dmoz:catid>
+  <dc:title>Society</dc:title>
+  <dmoz:link rdf:resource="http://www.yforum.com/"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.yforum.com/">
+  <dc:title>Y? The National Forum on People's Differences</dc:title>
+  <dc:description>The nation's only forum allowing people to ask and receive answers to the uncomfortable and even embarrassing questions they've always wanted to ask people who are different from themselves. All questions and answers are acceptable, as long as they promote dialogue and are not asked or answered out of hate.</dc:description>
+  <dmoz:priority>1</dmoz:priority>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Sports">
+  <dmoz:catid> "15"</dmoz:catid>
+  <dc:title>Sports</dc:title>
+  <dmoz:link rdf:resource="http://www.isportsnet.com"/>
+  <dmoz:link rdf:resource="http://www.infoplease.com/sports.html"/>
+  <dmoz:link rdf:resource="http://thor.prohosting.com/~sportiq/"/>
+  <dmoz:link rdf:resource="http://www.sportsearch.com"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://www.isportsnet.com">
+  <dc:title>Internet Sports Awards</dc:title>
+  <dc:description>This site allows Internet users the opportunity  to vote for the best players, teams and websites  in the following sports: baseball, basketball,  golf, football, hockey, auto racing,tennis, soccer,  pro wrestling, sports media, sports products and boxing.  Over 600 awards will be announced on December 1st.  2 million plus to vote in the inaugural year of the awards.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.infoplease.com/sports.html">
+  <dc:title>Information Please</dc:title>
+  <dc:description>Information Please Sports Almanac  Facts, figures, scores. Find the facts rdf:about sports here.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://thor.prohosting.com/~sportiq/">
+  <dc:title>Sports IQ Center</dc:title>
+  <dc:description>Find your sports IQ pick a sporting event champion get a sports penpal chat rdf:about sports and much more!!</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://www.sportsearch.com">
+  <dc:title>SportSearch.com -- Just Sports, Baby.</dc:title>
+  <dc:description>NewHoo! style sports search engine.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Test">
+  <dmoz:catid> "20"</dmoz:catid>
+  <dc:title>Test</dc:title>
+  <dmoz:link rdf:resource="http://skip.incog.com/"/>
+  <dmoz:link rdf:resource="http://home.digitalcity.com/washington/"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://skip.incog.com/">
+  <dc:title>SKIP IP-level Encryption</dc:title>
+</dmoz:ExternalPage>
+
+<dmoz:ExternalPage rdf:about="http://home.digitalcity.com/washington/">
+  <dc:title>Digital City - Washington, DC</dc:title>
+  <dmoz:priority>1</dmoz:priority>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/World">
+  <dmoz:catid> "16"</dmoz:catid>
+  <dc:title>World</dc:title>
+  <dmoz:link rdf:resource="http://directory.mozilla.org/World/world.html"/>
+</dmoz:Topic>
+
+<dmoz:ExternalPage rdf:about="http://directory.mozilla.org/World/world.html">
+  <dc:title>About the World Categories</dc:title>
+  <dc:description>Information rdf:about this section of the Open Directory, and how to submit  a new language category for inclusion here.</dc:description>
+</dmoz:ExternalPage>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Private">
+  <dmoz:catid> "19"</dmoz:catid>
+  <dc:title>Private</dc:title>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Bookmarks">
+  <dmoz:catid> "18"</dmoz:catid>
+  <dc:title>Bookmarks</dc:title>
+</dmoz:Topic>
+
+
+</rdf:RDF>

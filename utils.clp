@@ -5190,7 +5190,8 @@
 
 (deffunction rr1 () (reset) (run 1))
 ;-----------------------------------------EOF
-(defglobal ?*R-DEVICE_PATH* = "\/Users\/bobak\/Documents\/downloads\/ai\/prot\/rdf\/R-DEVICE\/")
+;(defglobal ?*R-DEVICE_PATH* = "\/Users\/bobak\/Documents\/downloads\/ai\/prot\/rdf\/R-DEVICE\/")
+(defglobal ?*R-DEVICE_PATH* = "\/home\/bobak\/bin\/csd.auth.gr\/R-DEVICE\/")
 (deffunction loadr-device ()
   "r-device rdf code loading"
  (load* (str-cat ?*R-DEVICE_PATH* "rdf.clp"))
@@ -5202,7 +5203,7 @@
  (load* (str-cat ?*R-DEVICE_PATH* "oo-querying.clp"))
  (load* (str-cat ?*R-DEVICE_PATH* "second-order.clp"))
  (load* (str-cat ?*R-DEVICE_PATH* "stratification.clp"))
- (load* (str-cat ?*R-DEVICE_PATH* "translation.clp"))
+ (load* (str-cat ?*R-DEVICE_PATH* "translation.CLP")) 
  (load* (str-cat ?*R-DEVICE_PATH* "translation-rules.clp"))
  (load* (str-cat ?*R-DEVICE_PATH* "main.clp"))
  (load* (str-cat ?*R-DEVICE_PATH* "rdf-auxiliary.clp"))
@@ -5212,6 +5213,7 @@
  (load* (str-cat ?*R-DEVICE_PATH* "triple-transformation.clp"))
  (reset)
 ) 
+;(defglobal ?*o-DEVICE_PATH* = "\/home\/bobak\/bin\/csd.auth.gr\/o-device\/")
 ;--------------------------------------------------------------c-trans.clp
 ;here are some utils to move into gen utils:
 ;; getNumber  - requests a number in a given range

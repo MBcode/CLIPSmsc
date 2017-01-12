@@ -1,0 +1,752 @@
+<!DOCTYPE rdf:RDF [
+  <!ENTITY dmoz "http://directory.mozilla.org/rdf/"> 
+]>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"  
+     xmlns:dmoz="&dmoz;">
+
+<dmoz:Topic rdf:about="&dmoz;Top">
+  <dmoz:catid>"1"</dmoz:catid>
+  <dc:title>Top</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Private"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Arts">
+  <dmoz:catid>"2"</dmoz:catid>
+  <dc:title>Arts</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Books"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Music"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Television"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Writing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Animation"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Anime"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Bodyart"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Bonsai"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Comics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Dance"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Fine_Arts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Muppets"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Movies"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Poetry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Theatre"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Photography"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Design"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Radio"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Online_Galleries"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Digital"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Graphic_Design"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Storytelling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Publishing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Asian_Arts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Architecture"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Decorative_Arts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Art_Directories_and_Links"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Illustration"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Magazines"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Literature"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Comedy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Art_Theft_and_Crime"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Calligraphy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Museums"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Art_History"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/People"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Sculpture"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Internet_Design"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Ceramics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Video"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Performing_Arts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/ASCII"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Arts/Artists"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Typography:Top/Computers/Fonts"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Business">
+  <dmoz:catid>"3"</dmoz:catid>
+  <dc:title>Business</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Consulting"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Marketing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Entrepreneurs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Insurance"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Industries"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Investing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Publications"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Jobs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Advice"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Advertising"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Home_Business"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Management"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Classifieds"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Venture_Capital"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Books"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Accounting"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Financial_Services"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Manufacturing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Business_Directories"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Training_and_Schools"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Business_Services"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/International_Business_and_Trade"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Human_Resources"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Office_Services"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Real_Estate"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Opportunities"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Resources"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Business/Office_Products"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Transportation:Top/Business/Industries/Transportation"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Retail:Top/Business/Industries/Retail"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Internet:Top/Business/Industries/Information_Technology/Internet"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Information Technology:Top/Business/Industries/Information_Technology"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Legal:Top/Society/Law/Law_Firms"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Travel:Top/Recreation/Travel"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Computers">
+  <dmoz:catid>"4"</dmoz:catid>
+  <dc:title>Computers</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Hacking"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Graphics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/CD_ROM"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Internet"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Security"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Software"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Hardware"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Operating_Systems"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Benchmarking"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/CAD"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Algorithms"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Databases"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Data_Communications"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/DSP"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Emulators"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Fonts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Groupware"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Home_Automation"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Human_Factors"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Multimedia"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Programming"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Robotics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Systems"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Desktop_Publishing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Supercomputing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Jobs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Parallel_Computing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Bulletin_Board_Systems"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Consultants"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Vendors"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Mobile_Computing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Companies"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Learning"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/News"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Organizations"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Intranets"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Computers/Artificial_Intelligence"/>
+  <dmoz:newsGroup rdf:resource="news:comp.misc"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Games">
+  <dmoz:catid>"5"</dmoz:catid>
+  <dc:title>Games</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/MUDs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Conventions"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Gambling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Women-in-Gaming"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Video_Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Play_by_Mail"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Corewar"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Game_Design"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Miniatures"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Netrek"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Pinball"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Trading_Cards"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Puzzles"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Crossword_Puzzles"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Webgames"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/IRC"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Game_Creation_Systems"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Fantasy_Sports"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Miscellaneous_Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Glass_Bead_Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Rogue-like"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Board_Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Card_Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Games/Role-Playing_Games"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Console Games:Top/Games/Video_Games/Console_Platforms"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Interactive Fiction:Top/Games/Video_Games/Interactive_Fiction"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Sports:Top/Sports"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Programming:Top/Computers/Programming/Games"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Computer Games:Top/Games/Video_Games/Computer_Platforms"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Arcade Games:Top/Games/Video_Games/Arcade_Games"/>
+  <dmoz:newsGroup rdf:resource="news:rec.games.misc"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Health">
+  <dmoz:catid>"6"</dmoz:catid>
+  <dc:title>Health</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Emergency_Services"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Fitness"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Pharmacy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Alternative"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Life_Extension"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Medicine"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Dentistry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Nursing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Nutrition"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Vision"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Services"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Beauty"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Substance_Abuse"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Patient_Education"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Womens_Health"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Children"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Conditions"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Occupational_Health_and_Safety"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Mental_Health"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Aging"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Healthcare_Industry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Products"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Publications"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Education"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Men's_Health"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Consumer_Support_Groups"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Disabilities"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Organizations"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Chat,_Discussion,_ICQ"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/References_and_Resources"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Health/Conditions_and_Diseases"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Business/Industries/Health_and_Fitness"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Computers/Internet/WWW/Directories/webring.org/Health"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Society/Issues/Health_Care"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Support Groups:Top/Society/Support_Groups"/>
+  <dmoz:newsGroup rdf:resource="news:alt.health"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Home">
+  <dmoz:catid>"7"</dmoz:catid>
+  <dc:title>Home</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Consumers"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Houses"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Homeowners_Associations"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Financial_Planning"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Kids"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Rural"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Gardens"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Homemaking"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Tax_Preparation"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Recipes"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Home/Entertainment"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/News">
+  <dmoz:catid>"8"</dmoz:catid>
+  <dc:title>News</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Internet"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Online"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Media"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Newspapers"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Colleges_and_Universities"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Magazines"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/News_Indexes"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Weather"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Filters"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Columnists"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Regional"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Services"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/News/Tech_News"/>
+  <dmoz:symbolic rdf:resource="&dmoz;TV Industry News:Top/Arts/Television/Industry_News"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Business News:Top/News/Online/Business_News"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Political News:Top/News/Online/Political"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Scientific News:Top/Science/Journals_and_Magazines/News"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Radio:Top/Arts/Radio"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Recreation">
+  <dmoz:catid>"9"</dmoz:catid>
+  <dc:title>Recreation</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Food"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Outdoors"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Antiques"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Aquaria"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Theme_Parks"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Autos"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Aviation"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Birdwatching"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Boating"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Climbing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Collecting"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Crafts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Drugs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Guns"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Humor"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Kites"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Knives"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Models"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Motorcycles"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Nudism"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Pets"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Ponds"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Scouting"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Travel"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Zoological"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Smoking"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Hot_Air_Ballooning"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Acrobatics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Amateur_Radio"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Recreation/Trains_and_Railroads"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Reading:Top/Arts/Books"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Sports:Top/Sports"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Gardens:Top/Home/Gardens"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Games:Top/Games"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Reference">
+  <dmoz:catid>"10"</dmoz:catid>
+  <dc:title>Reference</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Education"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Libraries"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Maps"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Archives"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Lexicon"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Dictionaries"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Style_Guides"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Directories"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Encyclopedia"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Quotations"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Thesauri"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Bibliography"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Knowledge_Management"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Handbooks"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Reference/Parliamentary_Procedure"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Regional">
+  <dmoz:catid>"11"</dmoz:catid>
+  <dc:title>Regional</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/NZ"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/US"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Canada"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/UK"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Europe"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Australia"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Asia"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Africa"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Middle_East"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/South_America"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Central_America"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Polar_Regions"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Atlantic_Islands"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Pacific_Islands"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Indian_Ocean_Islands"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Caribbean"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/North_America"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/A"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/B"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/C"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/D"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/E"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/F"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/L"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Z"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/G"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/N"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/K"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/M"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/W"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/R"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/S"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/I"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/P"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/U"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/J"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Q"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/T"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/H"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/Y"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/V"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Regional/O"/>
+  <dmoz:related rdf:resource="&dmoz;Top/World"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Science">
+  <dmoz:catid>"12"</dmoz:catid>
+  <dc:title>Science</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Psychology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Pyrotechnics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Aeronautics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Agriculture"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Archaeology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Astronomy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Futurism"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Ecology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Evolution"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Paleontology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Regional"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Chemistry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Cognitive_Science"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Cryonics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Cryptography"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Economics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Electronics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Energy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Engineering"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Environment"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Math"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Geology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Meteorology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Navigation"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Language_and_Linguistics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Logic"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Materials"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Laboratory_Medicine"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Military"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Optics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Physics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Polymers"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Skeptics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Space"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Statistics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Biology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Physiology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Software"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Geomatics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Ethnology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Molecular_Biology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Immunology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Food_Science"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Forensic"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/FAQs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Sociology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Biochemistry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Anomalies"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Cryptozoology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Acoustics,_Noise_and_Vibration"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Oceanography"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Nanotechnology"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Crystallography"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/About_Science"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Instruments_and_Supplies"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Political_Science"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Academia_and_Society"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/About_Science_in_other_languages"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Journals_and_Magazines"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Museums"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/A"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/B"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/C"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/D"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/E"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/F"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/G"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/N"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/V"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/S"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/M"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/I"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/P"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/U"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/O"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Physical_Sciences"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Fluid_Mechanics_and_Dynamics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Z"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/H"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/R"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/T"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/X"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/L"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/W"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Q"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Science/Science-Technology_Policy"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Reference/Encyclopedia"/>
+  <dmoz:symbolic rdf:resource="&dmoz;History of Science:Top/Society/History/Science"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Hydrology:Top/Science/Environment/Water_Resources"/>
+  <dmoz:symbolic rdf:resource="&dmoz;History:Top/Society/History"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Anthropology:Top/Science/Biology/Anthropology"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Universities:Top/Reference/Education/Colleges_and_Universities"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Education:Top/Reference/Education/Science"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Medicine:Top/Health/Medicine"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Philosophy:Top/Society/Philosophy"/>
+  <dmoz:newsGroup rdf:resource="news:sci.misc"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Shopping">
+  <dmoz:catid>"13"</dmoz:catid>
+  <dc:title>Shopping</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Autos"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Clothing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Directories"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Online_Auctions"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Books"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Miscellaneous"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Gifts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Music"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Jewelry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Online_Malls"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Crafts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Home_and_Garden"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/International"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Pets"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Health_and_Beauty"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Computers"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Food"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Home_Electronics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Children"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Antiques_and_Collectables"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Art_Galleries"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Office_Supplies"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Sporting_Goods"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Party_Supplies"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Housewares"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Flowers"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Videos"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/Hardware_-_Home_Improvement"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Shopping/General_Merchandise"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Furniture:Top/Shopping/Home_and_Garden/Furniture"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Society">
+  <dmoz:catid>"14"</dmoz:catid>
+  <dc:title>Society</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Activism"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Heraldry"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Subcultures"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Death"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Future"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Genealogy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/History"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Men"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Transgendered"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Advice"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Military"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/People"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Religion"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Human_Rights"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Support_Groups"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Women"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Law"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Paranormal"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Issues"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Politics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Holidays"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Sexuality"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Relationships"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Disabled"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Gay,_Lesbian,_and_Bisexual"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Organizations"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Ethnicity"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Indigenous_People"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Government"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Philosophy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Lifestyle_Choices"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Seniors"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Society/Urban_Legends"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Crime:Top/Society/Law/Crime_and_Criminal_Law"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Veterans:Top/Society/Military/Veterans"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Editors' Picks:Top/Society/People/Editors_Picks"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Education:Top/Reference/Education"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Language and Linguistics:Top/Science/Language_and_Linguistics"/>
+  <dmoz:newsGroup rdf:resource="news:soc.misc"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Sports">
+  <dmoz:catid>"15"</dmoz:catid>
+  <dc:title>Sports</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Marching"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Auto_Racing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Bicycling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Equestrian"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Hunting"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Juggling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Martial_Arts"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Motorcycle_Racing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Scuba_Diving"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Skiing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Snowboarding"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Skydiving"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Archery"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Baseball"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Basketball"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Billiards"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Boxing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Cricket"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Fencing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Football"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Golf"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Hockey"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Bowling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Officiating"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Olympics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Paintball"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Pro_Wrestling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Rodeo"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Rowing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Rugby"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Inline_Skating"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Snowmobiles"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Soccer"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Softball"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Swimming"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Table_Soccer"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Table_Tennis"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Tennis"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Triathalon"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Volleyball"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Water_Skiing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Windsurfing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Horse_Racing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Wrestling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Unicycling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Running"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Bocce"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Kitesailing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Track_and_Field"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Personal_Watercraft"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Skateboarding"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Sailing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Shooting"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Wakeboarding"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Highland_Games"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Merchandise"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Walking"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Cheerleading"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Gambling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Canoe_and_Kayaking"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Skating"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Surfing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Lacrosse"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Fishing"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Orienteering"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Gymnastics"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Croquet"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Skibob"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Ultimate_Frisbee"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Frisbee"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Fantasy"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/College_and_University"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Flying_Discs"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/News"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Curling"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Sports/Training"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Games/Gambling/Sports"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Health/Fitness/Weightlifting/Bodybuilding"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Hiking:Top/Recreation/Outdoors/Hiking"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Paragliding:Top/Recreation/Aviation/Paragliding"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Bodybuilding:Top/Health/Fitness/Weightlifting/Bodybuilding"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Climbing:Top/Recreation/Climbing"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Test">
+  <dmoz:catid>"20"</dmoz:catid>
+  <dc:title>Test</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/Test"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/Chez_Bob"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/another"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/Private"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/Rules"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/alphabet"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/Stay_Out_really"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/Eeeek_Oh_Yes"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Test/This_Cat_Will_Not_Die"/>
+  <dmoz:related rdf:resource="&dmoz;Top/Test/Chez_Bob/Dinner_with_Andre"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Blekko:Top/Test/Chez_Bob/Yikes"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Eeeek Link:Top/Test/Eeeek_Oh_Yes"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Wheee:Top/Society/Religion"/>
+  <dmoz:symbolic rdf:resource="&dmoz;pbmtest:Top/Games/Play_by_Mail"/>
+  <dmoz:symbolic rdf:resource="&dmoz;Holdc:Top/Sports/Skiing/Nordic/Resorts"/>
+  <dmoz:newsGroup rdf:resource="news:alt.test"/>
+  <dmoz:newsGroup rdf:resource="news:comp.test"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/World">
+  <dmoz:catid>"16"</dmoz:catid>
+  <dc:title>World</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Espana"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Chinese"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Deutsch"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Czech"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Bulgarian"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Fran栩s"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Italiano"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Nederlands"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Lietuviu"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Polska"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Indonesia"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Greek"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Portuguese"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Russian"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Svenska"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Esperanto"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Norsk"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Dansk"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Urdu"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Rom"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Catal"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Gaelic"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Korean"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Simplified_Chinese"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Afrikaans"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Turkish"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Faroese"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Bosnian"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Malaysian"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Vlaams"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Thai"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Letzebuergesch"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Finland"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/World/Farsi"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Private">
+  <dmoz:catid>"19"</dmoz:catid>
+  <dc:title>Private</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Private/Cybion"/>
+</dmoz:Topic>
+
+<dmoz:Topic rdf:about="&dmoz;Top/Bookmarks">
+  <dmoz:catid>"18"</dmoz:catid>
+  <dc:title>Bookmarks</dc:title>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/A"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/B"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/C"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/D"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/E"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/F"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/G"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/H"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/I"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/J"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/K"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/L"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/M"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/N"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/O"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/P"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/Q"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/R"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/S"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/T"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/U"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/V"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/W"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/X"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/Y"/>
+  <dmoz:narrow rdf:resource="&dmoz;Top/Bookmarks/Z"/>
+</dmoz:Topic>
+
+
+</rdf:RDF>

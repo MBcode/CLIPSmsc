@@ -1,0 +1,4 @@
+
+For more details about O-DEVICE, please read the corresponding paper
+
+http://doi.ieeecomputersociety.org/10.1109/TKDE.2007.190699

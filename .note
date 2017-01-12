@@ -3,6 +3,7 @@ do NOT use pins2km nor km-tax considering malecoli cl-kb then lisa.sf.net
   change pprj type to pont/pins looses the same info; assume it was the experimental-xml file,might be able to convert this
 
 Look at r-device code again, when I can, as a way to get triples out &more?; though protege has mult save-as/transform opts
+ Found it after the o-device code; it still loads, might try o code next; could be useful, but would still like2get back2lisp
 
 using agraph&gruff and asking for connections might be nice    
 

@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY rdfns 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+     <!ENTITY rdfsns 'http://www.w3.org/2000/01/rdf-schema#'>
+     <!ENTITY dcns 'http://purl.org/dc/elements/1.1/'>
+     <!ENTITY dctermsns 'http://purl.org/dc/terms/'>
+     <!ENTITY dctypens 'http://purl.org/dc/dcmitype/'>
+  ]>
+
+  <rdf:RDF 
+     xmlns:rdf="&rdfns;"
+     xmlns:rdfs="&rdfsns;"
+     xmlns:dc="&dcns;"
+     xmlns:dcterms="&dctermsns;"
+     xmlns:dctype="&dctypens;">
+
+
+
+
+<rdf:Description rdf:about="&dctermsns;">
+   <dc:title xml:lang="en-US">The Dublin Core Terms Namespace providing access to it's content by means of an RDF Schema.</dc:title>
+   <dc:publisher xml:lang="de">The Dublin Core Metadata Initiative</dc:publisher>
+   <dc:description xml:lang="en-US"> The Dublin Core Terms namespace provides URIs for the Dublin Core Element Set Qualifier Vocabulary. Vocabulary terms are declared using RDF Schema language to support RDF applications.  The Dublin Core qualifiers form a richer vocabulary, which is intended to facilitate discovery of resources.  It will be updated according to dc-usage decisions.</dc:description>
+   <dc:language xml:lang="en-US">English</dc:language>
+   <dcterms:issued>2000-07-11</dcterms:issued>
+   <dcterms:modified>2002-05-24</dcterms:modified>
+   <dc:source 
+      rdf:resource="http://www.dublincore.org/documents/2000/07/11/dcmes-qualifiers/"/>
+   <dc:source rdf:resource="http://www.dublincore.org/usage/decisions/"/>
+   <dcterms:requires rdf:resource="http://purl.org/dc/elements/1.1/"/>
+   <dcterms:references rdf:resource="http://purl.org/dc/dcmitype/"/>
+</rdf:Description>
+    
+
+<rdf:Description 
+  rdf:about="http://www.dublincore.org/documents/2000/07/11/dcmes-qualifiers/">
+  <dc:title  xml:lang="en-US">Dublin Core Qualifiers</dc:title>
+</rdf:Description>
+
+
+<rdf:Description rdf:about="http://www.dublincore.org/usage/decisions/">
+  <dc:title xml:lang="en-US">DCMI Usage Board decisions</dc:title> 
+</rdf:Description>  
+  
+
+  <rdf:Property rdf:about="&dctermsns;alternative">
+    <rdfs:label xml:lang="en-US">Alternative</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Any form of the title used as a substitute or alternative to the formal title of the resource.</rdfs:comment>
+    <dc:description xml:lang="en-US">This qualifier can include Title abbreviations as well as translations.</dc:description>
+    <rdfs:subPropertyOf rdf:resource="&dcns;title"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+
+  <rdfs:Class rdf:about="&dctermsns;SubjectScheme">
+    <rdfs:label xml:lang="en-US">Subject Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of subject encoding schemes and/or formats</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:references rdf:resource="&dcns;subject"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdfs:Class>
+
+  <dcterms:SubjectScheme rdf:about="&dctermsns;LCSH">
+    <rdfs:label xml:lang="en-US">LCSH</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Library of Congress Subject Headings</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SubjectScheme>
+
+  <dcterms:SubjectScheme rdf:about="&dctermsns;LCC">
+    <rdfs:label xml:lang="en-US">LCC</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Library of Congress Classifications</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class" />
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdfs:seeAlso 
+         rdf:resource="http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SubjectScheme>
+
+  <dcterms:SubjectScheme rdf:about="&dctermsns;DDC">
+    <rdfs:label xml:lang="en-US">DDC</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Dewey Decimal Classification</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:seeAlso rdf:resource="http://www.oclc.org/dewey/index.htm" />
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SubjectScheme>
+
+  <dcterms:SubjectScheme rdf:about="&dctermsns;UDC">
+    <rdfs:label xml:lang="en-US">UDC</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Universal Decimal Classification</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:seeAlso rdf:resource="http://www.udcc.org/"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SubjectScheme>
+
+  <dcterms:SubjectScheme rdf:about="&dctermsns;MESH">
+    <rdfs:label xml:lang="en-US">MeSH</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Medical Subject Headings</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/mesh/meshhome.html"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SubjectScheme>
+
+
+  <rdf:Property rdf:about="&dctermsns;abstract">
+    <rdfs:label xml:lang="en-US">Abstract</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A summary of the content of the resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;description"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;tableOfContents">
+    <rdfs:label xml:lang="en-US">Table Of Contents</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A list of subunits of the content of the resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;description"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+
+  <rdf:Property rdf:about="&dctermsns;created">
+    <rdfs:label xml:lang="en-US">Created</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date of creation of the resource</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;issued">
+    <rdfs:label xml:lang="en-US">Issued</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;modified">
+    <rdfs:label xml:lang="en-US">Modified</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date on which the resource was changed</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;valid">
+    <rdfs:label xml:lang="en-US">Valid</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date (often a range) of validity of a resource</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;available">
+    <rdfs:label xml:lang="en-US">Available</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date (often a range) that the resource will become or did become available.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+
+
+
+  <rdfs:Class rdf:about="&dctermsns;DateScheme">
+    <rdfs:label xml:lang="en-US">Date Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of date encoding schemes and/or formats </rdfs:comment>
+    <dcterms:references rdf:resource="&dcns;date"/>
+    <dcterms:references rdf:resource="&dctermsns;temporal"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdfs:Class>
+
+  <dcterms:DateScheme rdf:about="&dctermsns;W3CDTF">
+    <rdfs:label xml:lang="en-US">W3C-DTF</rdfs:label>
+    <rdfs:comment xml:lang="en-US">W3C Encoding rules for dates and times - a profile based on ISO8601 </rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdf:type rdf:resource="&dctermsns;TemporalScheme"/>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/NOTE-datetime"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/> 
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:DateScheme>
+
+  <dcterms:DateScheme rdf:about="&dctermsns;Period">
+    <rdfs:label xml:lang="en-US">DCMI Period</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A specification of the limits of a time interval.</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdf:type rdf:resource="&dctermsns;TemporalScheme"/>
+    <rdfs:seeAlso 
+      rdf:resource="http://dublincore.org/documents/2000/07/28/dcmi-period/"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/> 
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:DateScheme>
+
+
+
+
+
+
+  <rdf:Property rdf:about="&dctermsns;extent">
+    <rdfs:label xml:lang="en-US">Extent</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The size or duration of the resource</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;format"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;medium">
+    <rdfs:label xml:lang="en-US">Medium</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The material or physical carrier of the resource</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;format"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+
+
+
+  <rdfs:Class rdf:about="&dctermsns;FormatScheme">
+    <rdfs:label xml:lang="en-US">Format Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of format encoding schemes.</rdfs:comment>
+    <dcterms:references rdf:resource="&dcns;format"/>
+    <rdfs:isDefinedBy rdf:resource ="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdfs:Class>
+
+  <dcterms:FormatScheme rdf:about="&dctermsns;IMT">
+    <rdfs:label xml:lang="en-US">IMT</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The Internet media type of the resource</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdfs:seeAlso 
+  rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/media-types"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:FormatScheme>
+
+
+
+
+
+
+  <rdfs:Class rdf:about="&dctermsns;LanguageScheme">
+    <rdfs:label xml:lang="en-US">Language Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of language encoding schemes and/or formats.</rdfs:comment>
+    <dcterms:references rdf:resource="&dcns;language"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdfs:Class>
+
+
+  <dcterms:LanguageScheme rdf:about="&dctermsns;RFC1766">
+    <rdfs:label xml:lang="en-US">RFC1766</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Internet RFC 1766 'Tags for the identification of Language' specifies a two letter code taken from ISO 639, followed optionally by a two letter country code taken from ISO 3166.  </rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc1766.txt"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:LanguageScheme>
+
+  <dcterms:LanguageScheme rdf:about="&dctermsns;ISO639-2">
+    <rdfs:label xml:lang="en-US">ISO 639-2</rdfs:label>
+    <rdfs:comment xml:lang="en-US">ISO 639-2: Codes for the representation of names of languages.</rdfs:comment>
+    <rdf:type rdf:resource="&rdfns;Class"/>
+    <rdfs:seeAlso 
+      rdf:resource="http://www.loc.gov/standards/iso639-2/langhome.html"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:LanguageScheme>
+
+
+
+
+
+
+  <rdf:Property rdf:about="&dctermsns;isPartOf">
+    <rdfs:label xml:lang="en-US">Is Part Of</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource is a physical or logical part of the referenced resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;hasPart">
+    <rdfs:label xml:lang="en-US">Has Part</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource includes the referenced resource either physically or logically.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;isVersionOf">
+    <rdfs:label xml:lang="en-US">Is Version Of</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource is a version, edition, or adaptation of the referenced resource. Changes in version imply substantive changes in content rather than differences in format.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;hasVersion">
+    <rdfs:label xml:lang="en-US">Has Version</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource has a version, edition, or adaptation, namely, the referenced resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;isFormatOf">
+    <rdfs:label xml:lang="en-US">Is Format Of</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource is the same intellectual content of the referenced resource, but presented in another format.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;hasFormat">
+    <rdfs:label xml:lang="en-US">Has Format</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource pre-existed the referenced resource, which is essentially the same intellectual content presented in another format.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;" />
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;references">
+    <rdfs:label xml:lang="en-US">References</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource references, cites, or otherwise points to the referenced resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource = "&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;isReferencedBy">
+    <rdfs:label xml:lang="en-US">Is Referenced By</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource is referenced, cited, or otherwise pointed to by the referenced resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;requires">
+    <rdfs:label xml:lang="en-US">Requires</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource requires the referenced resource to support its function, delivery, or coherence of content.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;isRequiredBy">
+    <rdfs:label xml:lang="en-US">Is Required By</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource is required by the referenced resource, either physically or logically.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;replaces">
+    <rdfs:label xml:lang="en-US">Replaces</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource supplants, displaces, or supersedes the referenced resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;isReplacedBy">
+    <rdfs:label xml:lang="en-US">Is Replaced By</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The described resource is supplanted, displaced, or superceded by the referenced resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;conformsTo">
+    <rdfs:label xml:lang="en-US">conforms to</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A reference to an established standard to which the resource conforms.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;relation"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2001-05-21</dcterms:issued>
+    <rdfs:seeAlso 
+       rdf:resource="http://www.dublincore.org/usage/decisions/#2001.01"/>
+  </rdf:Property>
+  
+ 
+  <rdf:Property rdf:about="&dctermsns;spatial">
+    <rdfs:label xml:lang="en-US">Spatial</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Spatial characteristics of the intellectual content of the resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;coverage"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;temporal">
+    <rdfs:label xml:lang="en-US">Temporal</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Temporal characteristics of the intellectual content of the resource.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;coverage"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdf:Property>
+
+
+
+
+  <rdfs:Class rdf:about="&dctermsns;SpatialScheme">
+    <rdfs:label xml:lang="en-US">Place Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of geographic place encoding schemes and/or formats</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:references rdf:resource="&dctermsns;spatial"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </rdfs:Class>
+
+  <dcterms:SpatialScheme rdf:about="&dctermsns;TGN">
+    <rdfs:label xml:lang="en-US">TGN</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The Getty Thesaurus of Geographic Names</rdfs:comment>
+    <rdfs:seeAlso 
+           rdf:resource="http://www.gii.getty.edu/vocabulary/tgn.html"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SpatialScheme>
+
+  <dcterms:SpatialScheme rdf:about="&dctermsns;ISO3166">
+    <rdfs:label xml:lang="en-US">ISO3166</rdfs:label>
+    <rdfs:comment xml:lang="en-US">ISO3166 Codes for the representation of names of countries</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://www.din.de/gremien/nas/nabd/iso3166ma/codlstp1/"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SpatialScheme>
+
+  <dcterms:SpatialScheme rdf:about="&dctermsns;Box">
+    <rdfs:label xml:lang="en-US">DCMI Box</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The DCMI Box identifies a region of space using its geographic limits.</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:seeAlso 
+      rdf:resource="http://dublincore.org/documents/2000/07/28/dcmi-box/"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/> 
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:SpatialScheme>
+
+  <dcterms:SpatialScheme rdf:about="&dctermsns;Point">
+    <rdfs:label xml:lang="en-US">DCMI Point</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The DCMI Point identifies a point in space using its geographic coordinates</rdfs:comment>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:seeAlso 
+      rdf:resource="http://dublincore.org/documents/2000/07/28/dcmi-point/"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued> 
+  </dcterms:SpatialScheme>
+
+  <rdfs:Class rdf:about="&dctermsns;TemporalScheme">
+    <rdfs:label xml:lang="en-US">Encoding Schemes
+      for temporal characteristics</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of encoding schemes for 
+     the coverage qualifier &quot;temporal&quot;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+    <dcterms:references rdf:resource="&dctermsns;temporal"/>
+  </rdfs:Class>
+
+
+  <rdfs:Class rdf:about="&dctermsns;TypeScheme">
+    <rdfs:label xml:lang="en-US">Resource Type Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of resource type encoding schemes and/or formats</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+    <dcterms:references rdf:resource="&dcns;type"/>
+  </rdfs:Class>
+
+  <dcterms:TypeScheme rdf:about="&dctermsns;DCMIType">
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdfs:label xml:lang="en-US">DCMI Type Vocabulary</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A list of types used to categorize the nature or genre of the content of the resource</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdfs:seeAlso rdf:resource="&dctypens;"/>
+    <rdfs:seeAlso 
+      rdf:resource="http://dublincore.org/documents/dcmi-type-vocabulary/"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+  </dcterms:TypeScheme> 
+
+  
+  <rdfs:Class rdf:about="&dctermsns;IdentifierScheme">
+    <rdfs:label xml:lang="en-US">Resource Identifier Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of resource identifier encoding schemes and/or formats</rdfs:comment>
+   <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+    <dcterms:references rdf:resource="&dcns;identifier"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="&dctermsns;RelationScheme">
+    <rdfs:label xml:lang="en-US">Resource Relation Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of resource relation encoding schemes and/or formats</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+    <dcterms:references rdf:resource="&dcns;relation"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="&dctermsns;SourceScheme">
+    <rdfs:label xml:lang="en-US">Source Encoding Schemes</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A set of source encoding schemes and/or formats</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+    <dcterms:references rdf:resource="&dcns;source"/>
+  </rdfs:Class>
+
+  <dcterms:IdentifierScheme rdf:about="&dctermsns;URI">
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <rdf:type rdf:resource="&dctermsns;RelationScheme"/>
+    <rdf:type rdf:resource="&dctermsns;SourceScheme"/>
+    <rdfs:label xml:lang="en-US">URI</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A URI Uniform Resource Identifier</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc2396.txt"/>
+    <rdfs:seeAlso
+      rdf:resource="http://www.dublincore.org/usage/decisions/#2001.04"/>
+    <dcterms:issued>2000-07-11</dcterms:issued>
+    <dcterms:modified>2001-05-21</dcterms:modified>
+  </dcterms:IdentifierScheme>
+
+
+  <rdf:Property rdf:about="&dctermsns;audience">
+   <rdfs:label xml:lang="en-US">Audience</rdfs:label>
+   <rdfs:comment>A class of entity for whom the resource is intended or useful.</rdfs:comment>
+   <dc:description>A class of entity may be determined by the creator or the publisher or by a third party.</dc:description>
+   <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+   <rdfs:seeAlso 
+     rdf:resource="http://dublincore.org/usage/decisions/#2001.01"/>
+   <dcterms:issued>2001-05-21</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;mediator">
+   <rdfs:label xml:lang="en-US">Mediator</rdfs:label>
+   <rdfs:comment>A class of entity that mediates access to the resource and for whom the resource is intended or useful.</rdfs:comment>
+   <dc:description>The audience for a resource of two basic classes: (1) an ultimate beneficiary of the resource, and (2) frequently, an entity that mediates access to the resource.  The mediator element refinement represents the second of these two classes.</dc:description>
+   <rdfs:subPropertyOf rdf:resource="&dctermsns;audience"/>
+   <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+   <rdfs:seeAlso 
+     rdf:resource="http://dublincore.org/usage/decisions/#2001.01"/>
+   <dcterms:issued>2001-05-21</dcterms:issued>
+  </rdf:Property>
+
+  <dcterms:LanguageScheme rdf:about="&dctermsns;RFC3066">
+    <rdfs:label xml:lang="en-US">RFC 3066</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Internet RFC 3066 'Tags for the Identification of Languages' 
+	 specifies a primary subtag which is a two-letter code taken from ISO 639 part 1 or a three-letter 
+	 code taken from ISO 639 part 2, followed optionally by a two-letter country code taken from 
+	 ISO 3166.  When a language in ISO 639 has both a two-letter and three-letter code, use the 
+	 two-letter code; when it has only a three-letter code, use the three-letter code.  This RFC 
+	 replaces RFC 1766.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <rdf:type rdf:resource="&rdfsns;Class"/>
+    <dcterms:issued>2002-07-13</dcterms:issued>
+  </dcterms:LanguageScheme>
+
+  <rdf:Property rdf:about="&dctermsns;dateAccepted">
+    <rdfs:label xml:lang="en-US">Date Accepted</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date of acceptance of the resource (e.g. of thesis by university 
+	 department, of article by journal, etc.).
+	 </rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2002-07-13</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;dateCopyrighted">
+    <rdfs:label xml:lang="en-US">Date Copyrighted</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date of a statement of copyright.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2002-07-13</dcterms:issued>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&dctermsns;dateSubmitted">
+    <rdfs:label xml:lang="en-US">Date Submitted</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Date of submission of the resource (e.g. thesis, articles, etc.).
+	 </rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="&dcns;date"/>
+    <rdfs:isDefinedBy rdf:resource="&dctermsns;"/>
+    <dcterms:issued>2002-07-13</dcterms:issued>
+  </rdf:Property>
+
+
+</rdf:RDF> 
+
