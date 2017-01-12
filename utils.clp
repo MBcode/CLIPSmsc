@@ -5547,8 +5547,13 @@
      
   (return ?result))
 
+(deffunction findalls (?patterns ?string) (map2 findall ?patterns ?string))
+
 (deffunction find-ins-str (?class ?slot ?value)  ;new find-ins fnc
-  (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) )))
+ ;(find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot)))
+  (if (multifieldp ?value) then ;allows for egrep like abiility, if any of values hit
+      (find-all-instances ((?t ?class)) (findalls ?value (slot-value ?t ?slot) ))
+ else (find-all-instances ((?t ?class)) (findall ?value (slot-value ?t ?slot) ))))
 ;can use w/:
 (deffunction find-ins-str-sv (?cls ?sn ?str) 
    (save_ins2 (find-ins-str ?cls ?sn ?str) (str-cat ?cls ".ins")))
@@ -5566,7 +5571,7 @@
 (deffunction find-ins-str1dots (?dnl ?str)
   (rm-duplicates (map1 find-ins-str1dot ?dnl ?str)))
 (deffunction find-ins-str1dots-sv (?dnl ?str)
-  (save_ins2 (find-ins-str1dots ?dnl ?str) (str-cat ?str ".ins")))
+  (save_ins2 (find-ins-str1dots ?dnl ?str) (str-cat (underscore ?str) ".ins")))
 
   
 (deffunction split (?pattern ?string $?max)
