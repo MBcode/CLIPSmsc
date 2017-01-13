@@ -342,7 +342,7 @@
 (deffunction print_class (?c)  (describe-class ?c)) ;specialize below
 ;BROWSE-CLASSES: Provides a rudimentary display of the inheritance
 ;                relationships between a class and all its subclasses.
-;(browse-classes [<class-name>])
+;(browse-classes [<class-name>]) ;taxonomy
 
 ;-should make this a method that takes a stream-obj, that could incl an external-pipe,
 ; look into routers/streams, and see if you could open a stream to a pipe-file anyway
@@ -4184,9 +4184,11 @@
   (printout t crlf "print-class:" ?slotnames) ;dbg
   ;(funcall printout ?stream t "(defclass " ?class  " (is-a " (class-superclasses ?class)  ") " )  
   (if (full ?file) then ;to a file
-    (open ts (first ?file) "w")
+    ;(open ts (first ?file) "w")
+    (open (first ?file) ts  "a")
     (printout ts t "(defclass " ?class  " (is-a " (class-superclasses ?class)  ") " )  
-    (progn$ (?sn ?slotnames) do (printout ts t "(slot " ?sn " (create-accessor read-write))"))
+    (progn$ (?sn ?slotnames) do (printout ts t "  (slot " ?sn " (create-accessor read-write))"))
+    (printout ts ")")  
     (close ts)
    else ;to the screen
     (printout t crlf "(defclass " ?class  " (is-a " (class-superclasses ?class)  ") " )  
@@ -4200,14 +4202,21 @@
 ) ;-slotnames not quite working?  
 ;but don't really have to save classes as much as the instances , anyway
 (deffunction save-class (?class)
-  (print-class ?class (str-cat ?class ".clp"))
+ ;(print-class ?class (str-cat ?class ".clp")) ;maybe use .pont
+  (print-class ?class (str-cat ?class ".pont")) ;maybe use .pont
 )
 (deffunction save-class-ins (?class $?file)
   "save class ins into class.ins"
-  (bind ?insfile (first-dflt ?file (str-cat ?class ".ins")))
+ ;(bind ?insfile (first-dflt ?file (str-cat ?class ".ins")))
+  (bind ?insfile (first-dflt ?file (str-cat ?class ".pins")))
   ;"local" or "visible"
   (save-instances ?insfile visible inherit ?class)
   ;-it might be better to have a filename longer than the class, saving extra info in orig file!
+)
+(deffunction save-class+instances (?cls)
+  "make a class .pont & .pins files"
+  (save-class ?cls)
+  (save-class-ins ?cls)
 )
 (deffunction save-class-instances (?cl)
   "make a ins file for each class"
