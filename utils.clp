@@ -5746,3 +5746,9 @@
 ;CLIPS> (stringify "abc") "abc"
 ;CLIPS> (stringify "a\\b\\c") "a\\b\\c"
 ;CLIPS> (stringify "a\b\c") "abc"
+
+(deffunction str-cmp (?s1 ?s2)
+  (str-compare (upcase ?s1) (upcase ?s2)))
+(deffunction position- (?s1 ?s2)
+  (position$ (upcase ?s2) (upcase ?s1))) ;more like cmp
+
