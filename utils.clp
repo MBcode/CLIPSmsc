@@ -2677,6 +2677,14 @@
 (deffunction eclp () (loadp "eclp"))
 (deffunction eclp2 () (loadp "eclp2"))
 ;---
+(deffunction load-p (?cn)
+  "load cls+ins of classname"
+  ;if multifiledp  map1 on self
+  (loadp (str-cat "p/" ?cn)))  ;will mk fnc to save-class+instances a cls-lst to p/
+(deffunction load-insp (?cn)
+  "just get the cls instances"
+  (load-instances (str-cat "p/" ?cn ".pins")))
+;---
 ;lookat:
 ;DEPENDENCIES: Lists the partial matches from which a fact or 
 ;              instance receives logical support.
@@ -5750,5 +5758,11 @@
 (deffunction str-cmp (?s1 ?s2)
   (str-compare (upcase ?s1) (upcase ?s2)))
 (deffunction position- (?s1 ?s2)
+  "case-insensative position w/args like str-cmp"
   (position$ (upcase ?s2) (upcase ?s1))) ;more like cmp
+(deffunction rm-dsp (?s1)
+  (str-rms ?s1 (create$ "-" " " "_")))
+(deffunction position_ (?s1 ?s2)
+  "case+sp/etc-insensative position w/args like str-cmp"
+  (position- (rm-dsp ?s1) (rm-dsp ?s2))) ;more like cmp
 
