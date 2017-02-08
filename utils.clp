@@ -1080,6 +1080,14 @@
 ;(deffunction class-dot-subs (?class)
 ; (rmap1 class-sub-dot ?class))
 
+(deffunction print+semi (?s) (printout t crlf ?s ";"))
+(deffunction printsubgraph (?cls) 
+    (printout t crlf "subgraph " ?cls " {label=\"" ?cls "\";" crlf)
+    (map1 print+semi (slot-names ?cls)) 
+    (printout t crlf "}")) 
+(deffunction subclassgraphs (?cls)
+    (map1 printsubgraph (class-subclasses ?cls)))
+
 ;lookat:
 ;TIME: Returns a float representing the elapsed seconds since the system reference time.
 ;(time)
