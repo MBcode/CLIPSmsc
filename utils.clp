@@ -5773,4 +5773,4 @@
 (deffunction position_ (?s1 ?s2)
   "case+sp/etc-insensative position w/args like str-cmp"
   (position- (rm-dsp ?s1) (rm-dsp ?s2))) ;more like cmp
-
+(deffunction rm-comma (?s) (sub "," " "  ?s))
