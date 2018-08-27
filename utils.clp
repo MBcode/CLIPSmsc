@@ -2303,6 +2303,8 @@
   (if (full$ ?c) then (browse-classes (first ?c))
    else (browse-classes))
 )   ;new
+(deffunction bc-subs (?c)
+  (bc (class-subclasses ?c)))
 
 ;(deffunction s2i ($?s) (symbol-to-instance-name (to-sym ?s)))
 (deffunction s2i ($?s) 
