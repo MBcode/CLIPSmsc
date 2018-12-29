@@ -5776,3 +5776,5 @@
   "case+sp/etc-insensative position w/args like str-cmp"
   (position- (rm-dsp ?s1) (rm-dsp ?s2))) ;more like cmp
 (deffunction rm-comma (?s) (sub "," " "  ?s))
+(deffunction f2c (?f) (/ (* (- ?f 32) 5.0) 9.0))
+(deffunction c2f (?c) (+ 32.0 (/ (* ?c 9.0) 5.0)))
